@@ -1,11 +1,13 @@
-type Query {
-    "Devuelve todos los usuarios"
-    getUsers: [User]
+type User {
+    _id:Int
+    name:String
+    lastname:String
+    description:String
+    username:String
+    phone:String
 }
 
-type User {
-    _id:ID,
-    name:String,
-    description:String
-
+type Query {
+    getUsers: [User]
+    getUser(id:String): User
 }
