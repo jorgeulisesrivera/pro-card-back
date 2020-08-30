@@ -1,0 +1,11 @@
+type Query {
+    "Devuelve todos los usuarios"
+    getUsers: [User]
+}
+
+type User {
+    _id:ID,
+    name:String,
+    description:String
+
+}
