@@ -1,5 +1,5 @@
 type User {
-    _id:Int
+    id:Int
     name:String
     lastname:String
     description:String
@@ -9,5 +9,17 @@ type User {
 
 type Query {
     getUsers: [User]
-    getUser(id:String): User
+}
+
+input UserInput{
+    name:String!
+    lastname:String
+    description:String
+    username:String
+    phone:String
+}
+
+type Mutation {
+    createUser(input: UserInput):User
+    updateUser(input: UserInput, id:Int):User
 }
