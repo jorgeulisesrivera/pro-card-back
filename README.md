@@ -4,14 +4,14 @@
 
 ### Instalación de depenediencias
 
-> Puede utilizar [**yarn**](https://yarnpkg.com/getting-started/install) o npm
+> Instale las dependencias del proyecto con npm
 
 ```
-yarn install
+npm install
 ```
 
 
-## Iniciar aplicación
+## Iniciar aplicación localmente
 
 ```
 npm run dev
@@ -21,4 +21,4 @@ npm run dev
 
 1) La base de datos se encuentra publicada en internet
 
-2) Dentro del archivo .env se puede configurar el puerto de escucha por defecto
+2) Dentro del archivo .env se puede configurar el puerto de escucha (por defecto 5000)
