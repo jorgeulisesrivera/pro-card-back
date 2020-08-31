@@ -24,3 +24,14 @@ npm run dev
 2) Dentro del archivo .env se puede configurar el puerto de escucha (por defecto 5000)
 
 3) Solo para este caso de prueba el archivo .env se quitó de .gitignore
+
+
+## Funcionamiento
+
+La API tiene tres métodos:
+
+```
+Query getUsers
+Mutation createUser(user)
+Mutation updateUser(user,id)
+```
